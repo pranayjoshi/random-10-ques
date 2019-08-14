@@ -5,7 +5,7 @@ class Node:
         self.right = None
         self.val = key
 
-def printInorder(root):
+def prev(root):
     if root:
         printInorder(root.right)
         print(root.val)
@@ -23,4 +23,4 @@ root.right.left  = Node(6)
 root.right.right  = Node(7)
 
 print("\nImplemented Backward Iterator in BST")
-printInorder(root)
+prev(root)
