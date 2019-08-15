@@ -7,9 +7,9 @@ class Node:
 
 def prev(root):
     if root:
-        printInorder(root.right)
+        prev(root.right)
         print(root.val)
-        printInorder(root.left)
+        prev(root.left)
 
 
 
